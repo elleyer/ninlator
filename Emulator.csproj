@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="OpenTK" Version="4.8.2" />
+      <PackageReference Include="OpenTK.Graphics" Version="4.8.2" />
+      <PackageReference Include="StbImageSharp" Version="2.27.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Shaders\Shader.frag" />
+      <Content Include="Resources\01-implied.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Shaders\Shader.frag">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Shaders\Shader.vert" />
+      <Content Include="Shaders\Shader.vert">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\ntscpalette.pal" />
+      <None Remove="Resources\rom.nes" />
+      <Content Include="Resources\rom.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\01-implied.nes" />
+      <None Remove="Resources\10-stack.nes" />
+      <None Remove="Resources\02-immediate.nes" />
+      <None Remove="Resources\04-zp_xy.nes" />
+      <None Remove="Resources\05-absolute.nes" />
+      <None Remove="Resources\nestest.nes" />
+      <Content Include="Resources\nestest.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\ice.nes" />
+      <Content Include="Resources\ice.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\bike.nes" />
+      <Content Include="Resources\bike.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\palette.pal" />
+      <Content Include="Resources\palette.pal">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\duck.nes" />
+      <Content Include="Resources\duck.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\contra.nes" />
+      <Content Include="Resources\contra.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Resources\ducktales.nes" />
+      <Content Include="Resources\ducktales.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\kong.nes" />
+      <Content Include="Resources\kong.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\mario.nes" />
+      <Content Include="Resources\mario.nes">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
